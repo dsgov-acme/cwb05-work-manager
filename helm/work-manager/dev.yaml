@@ -9,11 +9,11 @@ env:
   ALLOWED_ORIGINS: "http://localhost:4200, http://localhost:4201, https://api-dev.cwb05.dsgov.demo.nuvalence.io, https://agency-dev.cwb05.dsgov.demo.nuvalence.io, https://public-dev.cwb05.dsgov.demo.nuvalence.io, https://employer-dev.cwb05.dsgov.demo.nuvalence.io"
   CERBOS_URI: "127.0.0.1:3592"
   DB_CONNECTION_URL: "jdbc:postgresql://127.0.0.1:5432/cwb05-dev-work-manager-db"
-  DB_USERNAME: "${sm://projects/cwb05-dev/secrets/cwb05-dev-db-user/versions/latest}"
-  DB_PASSWORD: "${sm://projects/cwb05-dev/secrets/cwb05-dev-db-pass/versions/latest}"
-  GCP_PROJECT_ID: "cwb05-dev"
-  SELF_SIGN_PUBLIC_KEY: "${sm://projects/cwb05-dev/secrets/cwb05-self-signed-token-public-key/versions/latest}"
-  SELF_SIGN_PRIVATE_KEY: "${sm://projects/cwb05-dev/secrets/cwb05-self-signed-token-private-key/versions/latest}"
+  DB_USERNAME: "${sm://projects/cwb05-dev-dd4e/secrets/cwb05-dev-db-user/versions/latest}"
+  DB_PASSWORD: "${sm://projects/cwb05-dev-dd4e/secrets/cwb05-dev-db-pass/versions/latest}"
+  GCP_PROJECT_ID: "cwb05-dev-dd4e"
+  SELF_SIGN_PUBLIC_KEY: "${sm://projects/cwb05-dev-dd4e/secrets/cwb05-self-signed-token-public-key/versions/latest}"
+  SELF_SIGN_PRIVATE_KEY: "${sm://projects/cwb05-dev-dd4e/secrets/cwb05-self-signed-token-private-key/versions/latest}"
   USER_MANAGEMENT_BASE_URL: "http://cwb05-user-management/um"
   TOKEN_PRIVATE_KEY_SECRET: "cwb05-self-signed-token-private-key"
   TOKEN_ISSUER: "cwb05"
@@ -25,4 +25,4 @@ env:
   PUBSUB_EMULATOR_HOST: false # set actual "host:port" to enable or false to disable
   PUBSUB_EMULATOR_ENABLED: false # set to true to enable emulator
   # cwb05-events publisher topics separated by comma
-  PUBLISHER_TOPICS: projects/cwb05-dev/topics/DOCUMENT_PROCESSING_INITIATION,projects/cwb05-dev/topics/APPLICATION_ROLE_REPORTING,projects/cwb05-dev/topics/NOTIFICATION_REQUESTS,projects/cwb05-dev/topics/AUDIT_EVENTS_RECORDING
+  PUBLISHER_TOPICS: projects/cwb05-dev-dd4e/topics/DOCUMENT_PROCESSING_INITIATION,projects/cwb05-dev-dd4e/topics/APPLICATION_ROLE_REPORTING,projects/cwb05-dev-dd4e/topics/NOTIFICATION_REQUESTS,projects/cwb05-dev-dd4e/topics/AUDIT_EVENTS_RECORDING
